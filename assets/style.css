@@ -1,0 +1,159 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1e24;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #2a2d35;
+    padding: 20px;
+}
+
+#profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.header-info h1, .header-info h2 {
+    margin: 5px 0;
+}
+
+.header-info p {
+    font-size: 0.95em;
+    color: #bbbbbb;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #20232a;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #9fafc7;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #d4e2f0;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    border-top: 1px solid #333;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+p {
+    color: #bbbbbb;
+}
+
+/* Projects grid */
+#projects {
+    padding-top: 0;
+}
+
+#projects h2 {
+    padding-top: 20px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+#project-preview {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+article {
+    background-color: #2a2d35;
+    padding: 15px;
+    border-left: 5px solid #5a5c66;
+}
+
+/* Contact styles */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+#contact ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+#contact li {
+    margin-right: 20px; /* Space between icons */
+}
+
+#contact svg {
+    fill: #9fafc7;
+    width: 20px;
+    height: 20px;
+}
+
+#contact a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; /* Text color matching the icons */
+}
+
+#contact a:hover svg {
+    fill: #ffffff;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profile-pic {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /* Adjusting grid columns for smaller screens */
+    #projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
